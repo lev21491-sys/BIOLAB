@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Мир одноклеточных водорослей — биология, 7 класс</title>
+<style>
+:root{--ink:#eafff5;--muted:#b8d9cb;--glass:rgba(7,35,33,.72);--line:rgba(181,255,220,.2);--mint:#75f0bd;--lime:#d6f77a;--blue:#76d8e9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:#061d20;line-height:1.6;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse at 15% 10%,#14564b 0,transparent 36%),radial-gradient(ellipse at 85% 35%,#123f53 0,transparent 34%),linear-gradient(145deg,#061d20,#082d2b 55%,#071d2b)}
+body:after{content:"";position:fixed;inset:0;z-index:-1;opacity:.16;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.24'/%3E%3C/svg%3E")}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}.nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;border-bottom:1px solid var(--line)}.brand{font-weight:850;letter-spacing:.04em}.brand span{color:var(--mint)}.navlinks{display:flex;gap:20px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:var(--mint)}
+.hero{padding:76px 0 55px;display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}.eyebrow{color:var(--mint);font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:800}.hero h1{font-size:clamp(2.5rem,6vw,5rem);line-height:1.02;margin:14px 0 20px;letter-spacing:-.045em}.hero h1 em{font-style:normal;color:var(--lime)}.hero p{color:var(--muted);font-size:1.12rem;max-width:620px}.pill{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:7px 13px;color:var(--mint);font-size:.82rem;margin:5px 5px 0 0}.hero-art{min-height:330px;display:grid;place-items:center;position:relative}.orb{width:min(300px,70vw);aspect-ratio:1;border-radius:50%;position:relative;background:radial-gradient(circle at 35% 28%,#c7ffb0 0 4%,#5ddc9d 12%,#178b67 43%,#075044 68%,#032f31 100%);box-shadow:0 0 70px #39d99b55,inset -24px -22px 45px #001c1d99,inset 12px 12px 35px #d4ffb755;animation:float 6s ease-in-out infinite}.orb:before,.orb:after{content:"";position:absolute;border:2px solid #a8ffd366;border-radius:50%;inset:14%;transform:rotate(35deg) scaleX(.45)}.orb:after{transform:rotate(-35deg) scaleX(.45)}.orb .nucleus{position:absolute;width:17%;height:17%;left:44%;top:39%;border-radius:50%;background:#e7ff9c;box-shadow:0 0 24px #e7ff9c}.orb .chlor{position:absolute;inset:22% 15%;border:10px solid #a7f36c;border-radius:50%;transform:rotate(-20deg);opacity:.8}.bubble{position:absolute;border-radius:50%;background:#b8ffe655;filter:blur(1px);animation:rise 7s linear infinite}.b1{width:13px;height:13px;left:8%;bottom:5%}.b2{width:8px;height:8px;right:8%;bottom:15%;animation-delay:2s}.b3{width:18px;height:18px;right:18%;top:3%;animation-delay:4s}
+@keyframes float{50%{transform:translateY(-13px) rotate(4deg)}}@keyframes rise{0%{transform:translateY(0);opacity:0}20%{opacity:1}100%{transform:translateY(-170px);opacity:0}}
+section{padding:55px 0}.section-head{max-width:720px;margin-bottom:26px}.section-head h2{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.12;margin:8px 0}.section-head p{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:var(--glass);border:1px solid var(--line);border-radius:22px;padding:24px;backdrop-filter:blur(14px);box-shadow:0 16px 50px #00141435}.card h3{margin:0 0 8px;font-size:1.25rem}.card p,.card li{color:var(--muted)}.tag{color:var(--lime);font-size:.78rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.cellbox{display:grid;grid-template-columns:260px 1fr;gap:25px;align-items:center}.cellsvg{width:100%;max-width:260px;filter:drop-shadow(0 0 24px #55e5a833)}.legend{display:grid;grid-template-columns:1fr 1fr;gap:10px}.legend div{padding:12px 14px;border-radius:13px;background:#ffffff08;border:1px solid var(--line);font-size:.92rem}.legend b{color:var(--lime);display:block}.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}.compare{overflow:hidden}.compare h3{display:flex;align-items:center;gap:10px}.dot{width:12px;height:12px;border-radius:50%;background:var(--mint);box-shadow:0 0 15px var(--mint)}.dot.blue{background:var(--blue);box-shadow:0 0 15px var(--blue)}table{width:100%;border-collapse:collapse;margin-top:14px}th,td{text-align:left;padding:13px 12px;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--mint);font-size:.9rem}td{color:var(--muted)}tr:last-child td{border:0}.callout{border-left:3px solid var(--lime);padding:14px 18px;background:#d6f77a0d;border-radius:0 14px 14px 0;color:var(--muted);margin-top:18px}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step{padding:20px;border:1px solid var(--line);border-radius:18px;background:#092b2b}.num{font-size:1.8rem;color:var(--lime);font-weight:900}.quiz{max-width:760px}.question{padding:18px 0;border-bottom:1px solid var(--line)}.question p{font-weight:750}.answers{display:grid;gap:8px}.answers button{border:1px solid var(--line);border-radius:12px;padding:11px 14px;background:#ffffff08;color:var(--ink);text-align:left;cursor:pointer;font:inherit;transition:.2s}.answers button:hover{background:#75f0bd18;border-color:var(--mint)}.answers button.correct{border-color:#75f0bd;background:#75f0bd20}.answers button.wrong{border-color:#ff9c8c;background:#ff9c8c18}.feedback{min-height:24px;color:var(--lime);font-size:.9rem}.result{font-size:1.1rem;color:var(--mint);font-weight:800;margin-top:16px}.footer{padding:30px 0 45px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}.btn{display:inline-block;background:var(--mint);color:#04241e;padding:12px 18px;border-radius:99px;font-weight:850;margin-top:12px}.btn:hover{transform:translateY(-2px)}.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}.reveal.show{opacity:1;transform:none}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:48px}.hero-art{min-height:260px}.navlinks{gap:10px;font-size:.78rem}.grid,.two{grid-template-columns:1fr}.cellbox{grid-template-columns:1fr}.cellsvg{margin:auto}.legend{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}section{padding:40px 0}.nav{align-items:flex-start;gap:12px;flex-direction:column}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+
+/* BIO LAB visual upgrade */
+:root{--mint:#82ffd0;--lime:#dfff8a}
+body{background:#04191b}
+body:before{background:radial-gradient(ellipse at 12% 8%,#17634f 0,transparent 38%),radial-gradient(ellipse at 88% 42%,#123f5a 0,transparent 38%),linear-gradient(145deg,#04191b,#082b2a 55%,#061a29);background-size:140% 140%;animation:ambient 22s ease-in-out infinite alternate}
+@keyframes ambient{to{background-position:100% 80%,0 20%,50% 50%}}
+body:after{opacity:.10}
+.hero-art:before{content:"";position:absolute;width:360px;height:360px;border:1px solid #8dffcf24;border-radius:50%;animation:orbit 28s linear infinite}
+.hero-art:after{content:"";position:absolute;width:410px;height:410px;border:1px dashed #8dffcf18;border-radius:50%;animation:orbit 42s linear infinite reverse}
+@keyframes orbit{to{transform:rotate(360deg)}}
+.orb{z-index:1}
+.photo-section{padding:35px 0 55px}
+.photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.photo-card{position:relative;overflow:hidden;padding:0;border-radius:24px;background:linear-gradient(145deg,#0b3935dd,#071f2bdd);border:1px solid #9effd12b;box-shadow:0 22px 65px #00121166;transition:transform .45s,border-color .45s,box-shadow .45s}
+.photo-card:hover{transform:translateY(-7px);border-color:#8dffd0a0;box-shadow:0 28px 75px #00110f99}
+.photo-frame{height:300px;overflow:hidden;position:relative;background:#061719;cursor:zoom-in}
+.photo-frame:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 58%,#031414a8);pointer-events:none}
+.photo-frame img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.2,.7,.2,1),filter .6s}
+.photo-card:hover .photo-frame img{transform:scale(1.065)}
+.photo-card.chlamy .photo-frame img{filter:grayscale(1) contrast(1.16) brightness(1.08)}
+.photo-card.chlorella .photo-frame img{filter:saturate(1.22) contrast(1.08) brightness(1.04)}
+/* Живое движение микромира */
+.photo-frame:before{content:"";position:absolute;inset:-12%;z-index:1;pointer-events:none;opacity:.28;background:radial-gradient(circle at 18% 28%,#b7ffe5 0 2px,transparent 3px),radial-gradient(circle at 76% 62%,#b7ffe5 0 1.5px,transparent 3px),radial-gradient(circle at 54% 18%,#b7ffe5 0 1px,transparent 3px),radial-gradient(circle at 88% 32%,#b7ffe5 0 2px,transparent 3px);background-size:190px 170px;animation:water-drift 13s linear infinite}
+.photo-card.chlamy .photo-frame img{animation:chlamy-swim 8s ease-in-out infinite;will-change:transform}
+.photo-card.chlorella .photo-frame img{animation:chlorella-float 12s ease-in-out infinite;will-change:transform}
+.photo-card:hover .photo-frame img{filter:brightness(1.12)}
+@keyframes chlamy-swim{0%,100%{transform:translate(-2%,1%) scale(1.04) rotate(-1deg)}25%{transform:translate(2%,-1%) scale(1.09) rotate(1deg)}50%{transform:translate(1%,2%) scale(1.06) rotate(0deg)}75%{transform:translate(-1%,-2%) scale(1.1) rotate(-.6deg)}}
+@keyframes chlorella-float{0%,100%{transform:translate(-1%,0) scale(1.03)}50%{transform:translate(1%,1%) scale(1.08)}}
+@keyframes water-drift{from{transform:translate3d(-2%,0,0)}to{transform:translate3d(2%,-3%,0)}}
+@media(prefers-reduced-motion:reduce){.photo-frame:before,.photo-card.chlamy .photo-frame img,.photo-card.chlorella .photo-frame img{animation:none}}
+.photo-info{padding:20px 22px 22px}
+.photo-info .tag{display:inline-block;margin-bottom:6px}
+.photo-info h3{font-size:1.35rem;margin:0 0 5px}
+.photo-info p{margin:0;color:var(--muted);font-size:.92rem}
+.photo-credit{font-size:.76rem;color:#9bbdb0;margin-top:12px}
+.photo-credit a{text-decoration:underline;text-decoration-color:#75f0bd66}
+.micro-label{position:absolute;z-index:2;top:14px;left:14px;padding:7px 11px;border:1px solid #b9ffe54d;background:#031d1bd9;border-radius:99px;color:#d9ffed;font-size:.75rem;backdrop-filter:blur(10px)}
+.lightbox{position:fixed;inset:0;z-index:20;display:none;place-items:center;padding:24px;background:#00100fee;backdrop-filter:blur(14px)}
+.lightbox.open{display:grid;animation:fadeIn .25s ease}
+.lightbox img{max-width:min(92vw,1100px);max-height:82vh;object-fit:contain;border-radius:16px;box-shadow:0 20px 80px #000}
+.lightbox button{position:absolute;top:22px;right:24px;border:1px solid #ffffff55;background:#092b2b;color:white;border-radius:50%;width:44px;height:44px;font-size:1.5rem;cursor:pointer}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.float-particles{position:fixed;inset:0;pointer-events:none;z-index:-1;overflow:hidden}
+.float-particles i{position:absolute;bottom:-20px;width:5px;height:5px;border-radius:50%;background:#a6ffdc;opacity:0;box-shadow:0 0 15px #80ffd0;animation:particleRise var(--dur) linear infinite;animation-delay:var(--delay);left:var(--x)}
+@keyframes particleRise{0%{transform:translate3d(0,0,0) scale(.5);opacity:0}12%{opacity:.5}85%{opacity:.22}100%{transform:translate3d(35px,-110vh,0) scale(1.5);opacity:0}}
+.card,.step{transition:transform .35s,border-color .35s,box-shadow .35s}
+.card:hover,.step:hover{border-color:#8dffd06b;box-shadow:0 18px 55px #00141455}
+@media(max-width:760px){.photo-grid{grid-template-columns:1fr}.photo-frame{height:250px}.hero-art:before{width:290px;height:290px}.hero-art:after{width:330px;height:330px}}
+@media(prefers-reduced-motion:reduce){body:before,.hero-art:before,.hero-art:after,.float-particles i{animation:none!important}}
+
+</style>
+</head>
+<body>
+<header class="wrap">
+<nav class="nav"><div class="brand">BIO<span>LAB</span> · 7 КЛАСС</div><div class="navlinks"><a href="#cells">Строение</a><a href="#compare">Сравнение</a><a href="#photos">Микрофотографии</a><a href="#compare">Сравнение</a><a href="#proof">Вывод</a></div></nav>
+</header>
+<main>
+<div class="wrap hero">
+<div><div class="eyebrow">Интерактивный урок · Биология</div><h1>Маленькие, но <em>важные</em></h1><p>Изучаем одноклеточные зелёные водоросли — хламидомонаду и хлореллу. Рассмотрим их строение, найдём сходства и различия и выясним, почему их относят к низшим растениям в школьной классификации.</p><span class="pill">⏱ 7–10 минут</span><span class="pill">🌿 Просто и наглядно</span><span class="pill">🔬 Реальные микрофотографии</span></div>
+<div class="hero-art"><div class="orb"><div class="chlor"></div><div class="nucleus"></div></div><i class="bubble b1"></i><i class="bubble b2"></i><i class="bubble b3"></i></div>
+</div>
+<section id="photos" class="wrap photo-section reveal">
+<div class="section-head"><div class="eyebrow">Микромир · реальные снимки</div><h2>Посмотри на них под микроскопом</h2><p>Это не иллюстрации, а настоящие микрофотографии. Нажми на снимок, чтобы рассмотреть его крупнее.</p></div>
+<div class="photo-grid">
+<article class="photo-card chlamy">
+<div class="photo-frame" data-full="https://upload.wikimedia.org/wikipedia/commons/c/c9/Chlamydomonas2-2.jpg" data-fallback="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNjIwIiB2aWV3Qm94PSIwIDAgOTAwIDYyMCI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJiZyI+PHN0b3Agc3RvcC1jb2xvcj0iIzEyM2MzNSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzA2MTkxNiIvPjwvcmFkaWFsR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJjZWxsIj48c3RvcCBzdG9wLWNvbG9yPSIjYjllNzhiIi8+PHN0b3Agb2Zmc2V0PSIuNTUiIHN0b3AtY29sb3I9IiM0YzliNTUiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxNzNlMzIiLz48L3JhZGlhbEdyYWRpZW50PjxmaWx0ZXIgaWQ9ImJsdXIiPjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjEyIi8+PC9maWx0ZXI+PC9kZWZzPjxyZWN0IHdpZHRoPSI5MDAiIGhlaWdodD0iNjIwIiBmaWxsPSJ1cmwoI2JnKSIvPjxnIGZpbGw9IiM3YmNmOGEiIG9wYWNpdHk9Ii4xOCIgZmlsdGVyPSJ1cmwoI2JsdXIpIj48Y2lyY2xlIGN4PSIxODAiIGN5PSIxMjAiIHI9IjcwIi8+PGNpcmNsZSBjeD0iNzQwIiBjeT0iNDgwIiByPSI5NSIvPjxjaXJjbGUgY3g9IjY5MCIgY3k9IjEyMCIgcj0iNTAiLz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDUwIDMxMCkgcm90YXRlKC0xOCkiPjxlbGxpcHNlIHJ4PSIxNzUiIHJ5PSIyMjAiIGZpbGw9IiMwYjI0MWYiIHN0cm9rZT0iIzhiY2Y4NiIgc3Ryb2tlLXdpZHRoPSI5Ii8+PGVsbGlwc2Ugcng9IjE0OCIgcnk9IjE5MyIgZmlsbD0idXJsKCNjZWxsKSIgc3Ryb2tlPSIjYzFlZDljIiBzdHJva2Utd2lkdGg9IjUiLz48cGF0aCBkPSJNLTEwNSAtMTI1IFEtMjAgLTE4NSAxMDAgLTExNSBRMTUwIC0yNSA4MCAxMTAgUTAgMTc1IC0xMTAgOTUgUS0xNTUgMTAgLTEwNSAtMTI1WiIgZmlsbD0iIzJjNzk0OCIgc3Ryb2tlPSIjYjVlOThkIiBzdHJva2Utd2lkdGg9IjgiLz48Y2lyY2xlIGN4PSItNjIiIGN5PSItNTgiIHI9IjIzIiBmaWxsPSIjZjFjNzVkIiBzdHJva2U9IiNmZmYwYTUiIHN0cm9rZS13aWR0aD0iNSIvPjxjaXJjbGUgY3g9IjQyIiBjeT0iNjAiIHI9IjM5IiBmaWxsPSIjMTc0YTM1IiBvcGFjaXR5PSIuNjUiLz48cGF0aCBkPSJNLTY1IC0xODUgUS0xNTAgLTI2NSAtMjE1IC0yNDUgTTY1IC0xODUgUTE1MCAtMjY1IDIxNSAtMjQ1IiBmaWxsPSJub25lIiBzdHJva2U9IiNiOGU5YTIiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTS0yMTUgLTI0NXEtMjUgLTI1IC0zNSAtNTIgTTIxNSAtMjQ1cTI1IC0yNSAzNSAtNTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2I4ZTlhMiIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L2c+PGcgZmlsbD0iI2Q5ZjRkMyIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIyIiBvcGFjaXR5PSIuOCI+PHRleHQgeD0iMjgiIHk9IjU4MCI+0KXQu9Cw0LzQuNC00L7QvNC+0L3QsNC00LAgwrcg0YPRh9C10LHQvdCw0Y8g0LjQu9C70Y7RgdGC0YDQsNGG0LjRjzwvdGV4dD48L2c+PC9zdmc+"><span class="micro-label">Сканирующая электронная микроскопия</span><img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Chlamydomonas2-2.jpg" alt="Хламидомонада под сканирующим электронным микроскопом" loading="eager" decoding="async"></div>
+<div class="photo-info"><span class="tag">Chlamydomonas reinhardtii</span><h3>Хламидомонада</h3><p>На снимке видна клетка с тонкими жгутиками, помогающими ей двигаться в воде. Электронная микрофотография.</p><div class="photo-credit">Фото: Dartmouth Electron Microscope Facility · <a href="https://commons.wikimedia.org/wiki/File:Chlamydomonas2-2.jpg" target="_blank" rel="noopener">Wikimedia Commons</a> · общественное достояние. Отображение адаптировано для сайта.</div></div>
+</article>
+<article class="photo-card chlorella">
+<div class="photo-frame" data-full="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/%D0%9E%D0%B4%D0%BD%D0%BE%D0%BA%D0%BB%D0%B5%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D0%B5_%D0%B2%D0%BE%D0%B4%D0%BE%D1%80%D0%BE%D1%81%D0%BB%D0%B8_%D1%85%D0%BB%D0%BE%D1%80%D0%B5%D0%BB%D0%BB%D0%B0.jpg/1280px-%D0%9E%D0%B4%D0%BD%D0%BE%D0%BA%D0%BB%D0%B5%D1%82%D0%BD%D1%8B%D0%B5_%D0%B2%D0%BE%D0%B4%D0%BE%D1%80%D0%BE%D1%81%D0%BB%D0%B8_%D1%85%D0%BB%D0%BE%D1%80%D0%B5%D0%BB%D0%BB%D0%B0.jpg" data-fallback="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNjIwIiB2aWV3Qm94PSIwIDAgOTAwIDYyMCI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJiZyI+PHN0b3Agc3RvcC1jb2xvcj0iIzE4M2IzMiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzA3MTcxMyIvPjwvcmFkaWFsR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJjIj48c3RvcCBzdG9wLWNvbG9yPSIjZDJmMmEyIi8+PHN0b3Agb2Zmc2V0PSIuNyIgc3RvcC1jb2xvcj0iIzY4YTk1ZSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzI0NTQzYyIvPjwvcmFkaWFsR3JhZGllbnQ+PGZpbHRlciBpZD0ic29mdCI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iNSIvPjwvZmlsdGVyPjwvZGVmcz48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjYyMCIgZmlsbD0idXJsKCNiZykiLz48ZyBmaWxsPSIjOTFkMThhIiBvcGFjaXR5PSIuNzUiIHN0cm9rZT0iI2QyZjBhZCIgc3Ryb2tlLXdpZHRoPSI1Ij48Y2lyY2xlIGN4PSIxNzAiIGN5PSIxNjAiIHI9IjY2IiBmaWxsPSJ1cmwoI2MpIi8+PGNpcmNsZSBjeD0iMzYwIiBjeT0iMTE1IiByPSI0NSIgZmlsbD0idXJsKCNjKSIvPjxjaXJjbGUgY3g9IjYwMCIgY3k9IjE2MCIgcj0iNzgiIGZpbGw9InVybCgjYykiLz48Y2lyY2xlIGN4PSI3NzAiIGN5PSIxMTAiIHI9IjM4IiBmaWxsPSJ1cmwoI2MpIi8+PGNpcmNsZSBjeD0iMjYwIiBjeT0iMzYwIiByPSI4MiIgZmlsbD0idXJsKCNjKSIvPjxjaXJjbGUgY3g9IjUwMCIgY3k9IjM2MCIgcj0iNTgiIGZpbGw9InVybCgjYykiLz48Y2lyY2xlIGN4PSI3MzAiIGN5PSI0MjAiIHI9IjkwIiBmaWxsPSJ1cmwoI2MpIi8+PGNpcmNsZSBjeD0iMTAwIiBjeT0iNTAwIiByPSIzNCIgZmlsbD0idXJsKCNjKSIvPjwvZz48ZyBmaWxsPSIjMWY2MzNlIiBvcGFjaXR5PSIuNzUiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE0MiIgcj0iMjUiLz48Y2lyY2xlIGN4PSIzNjUiIGN5PSIxMTIiIHI9IjE4Ii8+PGNpcmNsZSBjeD0iNTgwIiBjeT0iMTQ1IiByPSIzMCIvPjxjaXJjbGUgY3g9IjI2MCIgY3k9IjM0NSIgcj0iMzMiLz48Y2lyY2xlIGN4PSI1MDUiIGN5PSIzNTUiIHI9IjIzIi8+PGNpcmNsZSBjeD0iNzEwIiBjeT0iNDA1IiByPSIzNiIvPjwvZz48ZyBmaWxsPSIjZTJmNWM3IiBvcGFjaXR5PSIuNzUiIGZpbHRlcj0idXJsKCNzb2Z0KSI+PGNpcmNsZSBjeD0iMTkwIiBjeT0iMTkwIiByPSIxMCIvPjxjaXJjbGUgY3g9IjYyMCIgY3k9IjE4NSIgcj0iMTIiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIzOTAiIHI9IjEyIi8+PGNpcmNsZSBjeD0iNzYwIiBjeT0iNDYwIiByPSIxMyIvPjwvZz48dGV4dCB4PSIyOCIgeT0iNTgwIiBmaWxsPSIjZDlmNGQzIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjIiIG9wYWNpdHk9Ii44Ij7QpdC70L7RgNC10LvQu9CwIMK3INGD0YfQtdCx0L3QsNGPINC40LvQu9GO0YHRgtGA0LDRhtC40Y88L3RleHQ+PC9zdmc+"><span class="micro-label">Фазовый контраст · 1300×</span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/%D0%9E%D0%B4%D0%BD%D0%BE%D0%BA%D0%BB%D0%B5%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D0%B5_%D0%B2%D0%BE%D0%B4%D0%BE%D1%80%D0%BE%D1%81%D0%BB%D0%B8_%D1%85%D0%BB%D0%BE%D1%80%D0%B5%D0%BB%D0%BB%D0%B0.jpg/1280px-%D0%9E%D0%B4%D0%BD%D0%BE%D0%BA%D0%BB%D0%B5%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D0%B5_%D0%B2%D0%BE%D0%B4%D0%BE%D1%80%D0%BE%D1%81%D0%BB%D0%B8_%D1%85%D0%BB%D0%BE%D1%80%D0%B5%D0%BB%D0%BB%D0%B0.jpg" alt="Хлорелла под микроскопом, фазовый контраст" loading="eager" decoding="async"></div>
+<div class="photo-info"><span class="tag">Chlorella</span><h3>Хлорелла</h3><p>Множество округлых клеток хлореллы. Фазовый контраст помогает увидеть их форму и внутреннюю структуру.</p><div class="photo-credit">Фото: Andrei Savitsky · <a href="https://commons.wikimedia.org/wiki/File:Одноклеточные_водоросли_хлорелла.jpg" target="_blank" rel="noopener">Wikimedia Commons</a> · CC BY 4.0. Цвет и контраст на сайте слегка усилены.</div></div>
+</article>
+</div>
+</section>
+<section id="cells" class="wrap reveal">
+<div class="section-head"><div class="eyebrow">01 · Внешнее и внутреннее строение</div><h2>Что находится внутри клетки?</h2><p>Обе водоросли состоят всего из одной клетки. Но эта клетка умеет выполнять все необходимые жизненные процессы.</p></div>
+<div class="grid">
+<article class="card cellbox">
+<svg class="cellsvg" viewBox="0 0 300 300" role="img" aria-label="Схема клетки хламидомонады"><defs><radialGradient id="cy"><stop stop-color="#c5ff9a"/><stop offset="1" stop-color="#228d65"/></radialGradient></defs><path d="M145 45 Q205 50 224 115 Q248 188 190 235 Q130 280 76 222 Q28 170 68 100 Q91 54 145 45Z" fill="url(#cy)" stroke="#c5ffd2" stroke-width="5"/><path d="M145 45 Q205 50 224 115 Q248 188 190 235 Q130 280 76 222 Q28 170 68 100 Q91 54 145 45Z" fill="none" stroke="#eaffd7" stroke-width="2"/><path d="M80 110 Q145 55 210 125 Q232 170 178 220 Q115 247 65 185Z" fill="none" stroke="#c8f46e" stroke-width="17" opacity=".9"/><circle cx="151" cy="143" r="17" fill="#f1ff9b" stroke="#315e3c" stroke-width="3"/><circle cx="104" cy="180" r="7" fill="#e4ffb0"/><circle cx="194" cy="174" r="7" fill="#e4ffb0"/><path d="M130 47 Q117 15 93 8 M154 46 Q160 15 183 5" stroke="#9cf5e1" stroke-width="4" fill="none" stroke-linecap="round"/><circle cx="151" cy="143" r="4" fill="#567d39"/></svg>
+<div><span class="tag">Хламидомонада</span><h3>Подвижная клетка</h3><p>Обычно овальная или грушевидная. На переднем конце находятся два жгутика, с помощью которых клетка плавает.</p><ul><li>Клеточная оболочка</li><li>Цитоплазма и ядро</li><li>Чашевидный хлоропласт</li><li>Светочувствительный глазок</li><li>Сократительные вакуоли</li></ul></div>
+</article>
+<article class="card cellbox">
+<svg class="cellsvg" viewBox="0 0 300 300" role="img" aria-label="Схема клетки хлореллы"><defs><radialGradient id="ch"><stop stop-color="#d4ff9c"/><stop offset="1" stop-color="#248d55"/></radialGradient></defs><circle cx="150" cy="150" r="105" fill="url(#ch)" stroke="#d8ffd4" stroke-width="6"/><circle cx="150" cy="150" r="96" fill="none" stroke="#eaffd7" stroke-width="2"/><path d="M86 116 Q103 60 163 65 Q224 75 230 139 Q236 198 178 224 Q115 243 78 186 Q58 153 86 116Z" fill="none" stroke="#c9f36d" stroke-width="22"/><circle cx="151" cy="145" r="17" fill="#f2ff9c" stroke="#315e3c" stroke-width="3"/><circle cx="112" cy="185" r="5" fill="#eaffb7"/><circle cx="191" cy="103" r="5" fill="#eaffb7"/></svg>
+<div><span class="tag">Хлорелла</span><h3>Неподвижная клетка</h3><p>Обычно шаровидная, очень маленькая. Жгутиков и глазка у неё нет, поэтому активно плавать она не может.</p><ul><li>Прочная клеточная стенка</li><li>Цитоплазма и ядро</li><li>Хлоропласт с хлорофиллом</li><li>Запас питательных веществ</li><li>Размножение делением внутри материнской клетки</li></ul></div>
+</article>
+</div>
+<p class="callout"><b>Важно:</b> рисунки — упрощённые учебные схемы, не в масштабе. Размер и форма клеток могут немного различаться у разных видов.</p>
+</section>
+<section id="compare" class="wrap reveal">
+<div class="section-head"><div class="eyebrow">02 · Сравним</div><h2>Хламидомонада и хлорелла</h2><p>У них много общего, потому что обе — одноклеточные зелёные водоросли. Главное отличие связано с движением.</p></div>
+<div class="card compare"><table><thead><tr><th>Признак</th><th>Хламидомонада</th><th>Хлорелла</th></tr></thead><tbody>
+<tr><td>Форма клетки</td><td>Овальная или грушевидная</td><td>Шаровидная</td></tr>
+<tr><td>Жгутики</td><td>Обычно два есть</td><td>Нет</td></tr>
+<tr><td>Глазок</td><td>Есть, помогает реагировать на свет</td><td>Нет</td></tr>
+<tr><td>Передвижение</td><td>Активно плавает</td><td>Не плавает самостоятельно</td></tr>
+<tr><td>Хлоропласт</td><td>Обычно чашевидный</td><td>Обычно чашевидный или пластинчатый</td></tr>
+<tr><td>Питание</td><td>Фотосинтез</td><td>Фотосинтез</td></tr>
+<tr><td>Размножение</td><td>Бесполое; у многих видов бывает половое</td><td>Бесполое, обычно образованием автоспор</td></tr>
+</tbody></table></div>
+<div class="two" style="margin-top:18px"><div class="card"><h3><span class="dot"></span> Что общего?</h3><p>Обе живут преимущественно в воде или влажной среде, имеют ядро, цитоплазму, клеточную оболочку и хлоропласт. Они содержат хлорофилл и создают органические вещества при фотосинтезе.</p></div><div class="card"><h3><span class="dot blue"></span> В чём разница?</h3><p>Хламидомонада передвигается с помощью жгутиков и чувствует направление света благодаря глазку. Хлорелла неподвижна и устроена проще по внешним признакам.</p></div></div>
+</section>
+<section id="proof" class="wrap reveal">
+<div class="section-head"><div class="eyebrow">03 · Докажем вывод</div><h2>Почему это низшие растения?</h2><p>В школьной традиционной классификации водоросли часто называют низшими растениями. Вот признаки, которые помогают это объяснить.</p></div>
+<div class="steps">
+<div class="step"><div class="num">01</div><h3>Одна клетка</h3><p>Тело хлореллы и хламидомонады состоит из одной клетки.</p></div>
+<div class="step"><div class="num">02</div><h3>Нет органов</h3><p>У них нет настоящих корней, стеблей и листьев, как у многих наземных растений.</p></div>
+<div class="step"><div class="num">03</div><h3>Фотосинтез</h3><p>Хлорофилл помогает использовать энергию света для образования органических веществ.</p></div>
+</div>
+<div class="callout"><b>Вывод для тетради:</b> Хлорелла и хламидомонада — одноклеточные зелёные водоросли. Их относят к низшим растениям в школьной классификации, потому что их тело не разделено на ткани и органы, а представляет собой одну клетку. Они содержат хлорофилл и способны к фотосинтезу. В современной биологии водоросли рассматривают как разнообразную группу организмов, а не как единую группу настоящих растений.</div>
+</section>
+
+</main>
+<footer class="wrap footer"><b>BIO<span style="color:var(--mint)">LAB</span></b> · Интерактивный учебный сайт по биологии для 7 класса.<br>Материал можно использовать для повторения темы и демонстрации на уроке.</footer>
+<div class="float-particles" aria-hidden="true"><i style="--x:7%;--dur:19s;--delay:-2s"></i><i style="--x:18%;--dur:24s;--delay:-9s"></i><i style="--x:29%;--dur:21s;--delay:-4s"></i><i style="--x:41%;--dur:27s;--delay:-15s"></i><i style="--x:53%;--dur:20s;--delay:-7s"></i><i style="--x:66%;--dur:25s;--delay:-12s"></i><i style="--x:78%;--dur:22s;--delay:-3s"></i><i style="--x:89%;--dur:28s;--delay:-18s"></i><i style="--x:96%;--dur:23s;--delay:-10s"></i></div>
+<div class="lightbox" id="lightbox" aria-label="Увеличенная микрофотография"><button type="button" aria-label="Закрыть">×</button><img alt="Увеличенная микрофотография"></div>
+<script>
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');observer.unobserve(e.target)}}),{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+document.querySelectorAll('.photo-frame img').forEach(img=>{
+ img.addEventListener('error',()=>{
+  if(img.dataset.fallbackTried)return;
+  img.dataset.fallbackTried='1';
+  const frame=img.closest('.photo-frame');
+  const fallback=frame.dataset.fallback;
+  if(fallback){img.src=fallback;frame.dataset.full=fallback;}
+  else img.alt='Изображение недоступно';
+ });
+});
+document.querySelectorAll('.photo-frame').forEach(frame=>frame.addEventListener('click',()=>{
+ const box=document.getElementById('lightbox');box.querySelector('img').src=frame.dataset.full;box.classList.add('open');document.body.style.overflow='hidden';
+}));
+const lightbox=document.getElementById('lightbox');
+function closeLightbox(){lightbox.classList.remove('open');document.body.style.overflow='';}
+lightbox.querySelector('button').addEventListener('click',closeLightbox);
+lightbox.addEventListener('click',e=>{if(e.target===lightbox)closeLightbox()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox()});
+</script>
+</body></html>
